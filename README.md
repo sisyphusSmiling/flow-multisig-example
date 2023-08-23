@@ -209,4 +209,4 @@ In this demo, we
 
 Even though this demo is simple, it contains all the building blocks you need for more complex configurations. You could add an arbitrary number of keys on an account at arbitrary weights. Want a 5/8 multisig? Add 8 keys at `200.0` weight onto an account.
 
-Since Flow's account model has native support for multisig, adding, revoking, and rotating keys is extremely simple. The hope is that this demo introduced you well enought to the nuance involved in the configuration and tooling so you can use the feature set as best fits your use case.
+Since Flow's account model has native support for multisig, adding, revoking, and rotating keys is extremely simple. The hope is that this demo introduced you well enough to the nuance involved in the configuration and tooling so you can use the feature set as best fits your use case.
