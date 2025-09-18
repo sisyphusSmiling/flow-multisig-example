@@ -3,11 +3,11 @@
 ///
 transaction(publicKeys: [String], weights: [UFix64]) {
 
-    prepare(signer: AuthAccount) {
+    prepare(signer: auth(BorrowValue) &Account) {
 
         assert(publicKeys.length == weights.length, message: "Mismatched number of keys and weights")
         
-        let newAccount = AuthAccount(payer: signer)
+        let newAccount = Account(payer: signer)
 
         // Iterate over given keys, adding each to the new account at their corresponding weights
         for i, key in publicKeys {

@@ -60,18 +60,18 @@ You'll see a number of events emitted, including `flow.AccountCreated` which wil
 flow events get flow.AccountCreated
 ```
 
-And the event at the most recent block will give us the account address - `0xe03daebed8ca0615`
+And the event at the most recent block will give us the account address - `0x179b6b1cb6755e31`
 
 Now, we can validate the keys we added in the previous transaction by running:
 
 ```sh
-flow accounts get 0xe03daebed8ca0615
+flow accounts get 0x179b6b1cb6755e31
 ```
 
 Which gives us:
 
 ```sh
-Address	 0xe03daebed8ca0615
+Address	 0x179b6b1cb6755e31
 Balance	 0.00100000
 Keys	 2
 
@@ -108,7 +108,7 @@ Your `accounts` field should look as follows:
         "key": "94bf73ce1b12958e6091200ac21e43ddee67140c6312492ceb6fb115f4ea0984"
     },
     "alice": {
-        "address": "0xe03daebed8ca0615",
+        "address": "179b6b1cb6755e31",
         "key": {
             "type": "hex",
             "index": 0,
@@ -118,7 +118,7 @@ Your `accounts` field should look as follows:
         }
     },
     "bob": {
-        "address": "0xe03daebed8ca0615",
+        "address": "179b6b1cb6755e31",
         "key": {
             "type": "hex",
             "index": 1,
@@ -176,11 +176,11 @@ To confirm multisig was successful, we should see the following result - an expe
 
 ```sh
 ID	ae23e68e6861fba25826aad43ef98c84c47460b176929fcb466902da4caed484
-Payer	e03daebed8ca0615
-Authorizers	[e03daebed8ca0615]
+Payer	179b6b1cb6755e31
+Authorizers	[179b6b1cb6755e31]
 
 Proposal Key:
-    Address	e03daebed8ca0615
+    Address	179b6b1cb6755e31
     Index	0
     Sequence	0
 
@@ -192,7 +192,7 @@ Block Height	5
 ❌ Transaction Error
 [Error Code: 1101] error caused by: 1 error occurred:
 	* transaction execute failed: [Error Code: 1101] cadence runtime error: Execution failed:
-error: panic: Hello from 0xe03daebed8ca0615
+error: panic: Hello from 0x179b6b1cb6755e31
  --> ae23e68e6861fba25826aad43ef98c84c47460b176929fcb466902da4caed484:5:8
   |
 5 |         panic("Hello from ".concat(signer.address.toString()))

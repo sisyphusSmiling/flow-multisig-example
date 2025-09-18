@@ -11,7 +11,7 @@
 			"key": "94bf73ce1b12958e6091200ac21e43ddee67140c6312492ceb6fb115f4ea0984"
 		},
 		"alice": {
-			"address": "0xe03daebed8ca0615",
+			"address": "179b6b1cb6755e31",
 			"key": {
 				"type": "hex",
 				"index": 0,
@@ -21,7 +21,7 @@
 			}
 		},
 		"bob": {
-			"address": "0xe03daebed8ca0615",
+			"address": "179b6b1cb6755e31",
 			"key": {
 				"type": "hex",
 				"index": 1,
